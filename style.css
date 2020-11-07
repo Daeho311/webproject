@@ -1,0 +1,66 @@
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+hr.underheader{
+    margin-left: -100%;
+    margin-right: -100%;
+}
+
+/*메인 막대----------------------------------------------------------------------------------------------*/
+div.main{
+    height: 20px;
+    display: inline;
+    position: relative;
+}
+div.time1{
+    width: 8%;
+    background-color: red;
+    display: inline-block;
+    margin-left: -1%;
+    position: relative;
+}
+div.time2{
+    width: 8%;
+    background-color: yellow;
+    display: inline-block;
+    margin-left: -1%;
+    position: relative;
+}
+div.time3{
+    width: 35%;
+    background-color: green;
+    display: inline-block;
+    margin-left: -1%;
+    position: relative;
+}
+div.time4{
+    width: 25%;
+    background-color: blue;
+    display: inline-block;
+    margin-left: -1%;
+    position: relative;
+}
+div.time5{
+    width: 24%;
+    background-color: purple;
+    display: inline-block;
+    margin-left: -1%;
+    position: relative;
+}
+
+.imgclass1, .imgclass2, .imgclass3, .imgclass4{
+    margin-top: 20px;
+    display: inline-block;
+    width: 20%;
+    height: 20%;
+    opacity: 0;
+    transition: .7s;
+}
+
+.time1:hover ~ .imgclass1 {opacity: 1;}
+.time2:hover ~ .imgclass2 {opacity: 1;}
+.time3:hover ~ .imgclass3 {opacity: 1;}
+.time4:hover ~ .imgclass4 {opacity: 1;}
+/*메인 막대----------------------------------------------------------------------------------------------*/
