@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>project</title>
+        <link rel="stylesheet" href="../styles/timestyle.css">
+        <link href="../img/고대">
+    </head>
+    <body>
+        <header>
+            <div style="margin-left: 850px; display: inline-block;">
+                <a href="../main.html"><img src="../img/logo.JPG" width="190px" height="55px" style="margin-left: -400px;"></a>
+            </div>
+            </header>
+        <hr class="underheader">
+        <!--슬라이드-->
+        <aside>
+            <!--그림슬라이드-->
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext"><1 / 4></div>
+                    <a href=""><img src="../img/구한말/대호.jpg" style="width: 300px; height: 400px;"></a>
+                    <div class="text" align="center">대호</div>
+                </div>
+          
+                <div class="mySlides fade">
+                    <div class="numbertext"><2 / 4></div>
+                    <a href=""><img src="../img/구한말/봉오동전투.jpg" style="width: 300px; height: 400px;"></a>
+                    <div class="text" align="center">봉오동전투</div>
+                </div>
+          
+                <div class="mySlides fade">
+                    <div class="numbertext"><3 / 4></div>
+                    <a href=""><img src="../img/구한말/자전차왕엄복동.jpg" style="width: 300px; height: 400px;"></a>
+                    <div class="text" align="center">자전차왕 엄복동</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"><4 / 4></div>
+                    <a href=""><img src="../img/구한말/군함도.jpg" style="width: 300px; height: 400px;"></a>
+                    <div class="text" align="center">군함도</div>
+                </div>
+          
+    
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </aside>
+
+        <aside>
+            <div class="style2" style="margin-left: 60px;"><a href=""><img src="../img/구한말/덕혜옹주.jpg" width="198px" height="220px"></a><p>덕혜옹주</p><p style="margin-top: 50px; color: #A2A2A2; font-size: 13px;"></p></div>
+            <div class="style2"><a href=""><img src="../img/구한말/아가씨.jpg" width="198px" height="220px"></a><p>아가씨</p><p style="margin-top: 50px; color: #A2A2A2; font-size: 13px;"></p></div>
+            <div class="style2"><a href=""><img src="../img/구한말/암살.jpg" width="198px" height="220px"></a><p>암살</p><p style="margin-top: 50px; color: #A2A2A2; font-size: 13px;"></p></div>
+        </aside>
+
+        <!--더보기-->
+        <main>
+            <div id="morebtn" onclick="setModal();" style="text-align: center; width: 150px; height: 30px; background-color: #E6E6E6; color: black; margin-left: 58.5%; font-size: 20px; border-radius: 11px; margin-top: 60px; cursor: pointer;">더보기 ⇩</div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>더보기</h2>
+                </div>
+                <div class="modal-body">
+                    <div id="frames" name="frames" style="width:160%; height:190%;">
+                        <div class="style"><a href=""><img src="../img/구한말/말모이.jpg" width="198px" height="220px"></a><p>말모이</p><p style="margin-top: 50px; color: #A2A2A2; font-size: 13px;"></p></div>
+                        <div class="style"><a href=""><img src="../img/구한말/밀정.jpg" width="198px" height="220px"></a><p>밀정</p><p style="margin-top: 50px; color: #A2A2A2; font-size: 13px;"></p></div>
+                        <div class="style"><a href=""><img src="../img/구한말/동주.jpg" width="198px" height="220px"></a><p>동주</p><p style="margin-top: 50px; color: #A2A2A2; font-size: 13px;"></p></div>
+                        <div class="style"><a href=""><img src="../img/구한말/각시탈.jpg" width="198px" height="220px"></a><p>각시탈</p><p style="margin-top: 50px; color: #A2A2A2; font-size: 13px;"></p></div>
+                        <div class="style"><a href=""><img src="../img/구한말/미스터션샤인.jpg" width="198px" height="220px"></a><p>미스터션샤인</p><p style="margin-top: 50px; color: #A2A2A2; font-size: 13px;"></p></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <h3></h3>
+                </div>
+                </div>
+            </div>
+            
+        </main>
+<!-------------------------------------------------------------------------------------------------------------->
+
+
+        <!--슬라이드 스크립트-->
+        <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+    
+                function plusSlides(n) {
+                showSlides(slideIndex += n);
+                }
+    
+    
+                function currentSlide(n) {
+                showSlides(slideIndex = n);
+                }
+    
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {slideIndex = 1} 
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none"; 
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block"; 
+                    dots[slideIndex-1].className += " active";
+                }
+        </script>
+
+
+        <!--더보기 스크립트-->
+        <script>
+                var modal = document.getElementById("myModal");
+                var btn = document.getElementById("myBtn");
+                var span = document.getElementsByClassName("close")[0];
+                span.onclick = function() {
+                modal.style.display = "none";
+                }
+                window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+                }
+                
+                function setModal(url){
+                    var iframes = document.getElementById("frames");
+                var modalBody = document.getElementsByClassName("modal-body");
+                    iframes.src = url;
+                iframes.offsetWidth = modal.offsetWidth;
+                iframes.offsetHeight = modalBody.offsetHeight;
+                
+                
+                modal.style.display = "block";
+                }
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,146 @@
+body {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+hr.underheader{
+    margin-left: -1000000px;
+    margin-right: -1000000px;
+}
+
+/*메인 막대----------------------------------------------------------------------------------------------*/
+div.main{
+    display: block;
+    position: fixed;
+}
+div.time1{
+    width: 85px;
+    height: 25px;
+    background-color: #eeeae9;
+    display: inline-block;
+    margin-left: -5px;
+    position: relative;
+}
+div.time2{
+    width: 95px;
+    height: 25px;
+    background-color: #dcd3d0;
+    display: inline-block;
+    margin-left: -5px;
+    position: relative;
+}
+div.time3{
+    width: 375px;
+    height: 25px;
+    background-color: #b7cbdf;
+    display: inline-block;
+    margin-left: -5px;
+    position: relative;
+}
+div.time4{
+    width: 270px;
+    height: 25px;
+    background-color: #d5e5ee;
+    display: inline-block;
+    margin-left: -5px;
+    position: relative;
+}
+div.time5{
+    width: 255px;
+    height: 25px;
+    background-color: #e3e8f3;
+    display: inline-block;
+    margin-left: -5px;
+    position: relative;
+}
+
+/*막대 hover 이미지*/
+.imgclass1, .imgclass2, .imgclass3, .imgclass4 ,.imgclass5{
+    margin-top: 20px;
+    display: inline-block;
+    opacity: 0;
+    transition: 0s;
+    position: fixed;
+}
+
+
+.time1:hover ~ .imgclass1 {opacity: 1;}
+.time2:hover ~ .imgclass2 {opacity: 1;}
+.time3:hover ~ .imgclass3 {opacity: 1;}
+.time4:hover ~ .imgclass4 {opacity: 1;}
+.time5:hover ~ .imgclass5 {opacity: 1;}
+/*메인 막대----------------------------------------------------------------------------------------------*/
+
+
+.icboxm{
+    width: 180px;
+    height: 270px;
+    border : 0.5px solid black;
+    display: inline-block;
+    opacity: 1;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 10px;
+    font-style: arial;
+    background-color: #eeeae9;
+}
+.icboxd{
+    width: 180px;
+    height: 270px;
+    border : 0.5px solid black;
+    display: inline-block;
+    opacity: 1;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 10px;
+    font-style: arial;
+    background-color: #d5e5ee;
+}
+
+#content {
+    padding: 10px;
+    background-color: #fefefe;
+    margin-left: 0px;
+    display: inline-block;
+}
+
+#rank-list a {
+    color: black;
+    text-decoration: none;
+}
+
+#rank-list a:hover {
+    text-decoration: underline;
+}
+
+#rank-list {
+    overflow: hidden;
+    width: 200px;
+    height: 20px;
+    margin: 0;
+}
+
+#rank-list dt {
+    display: none;
+}
+
+#rank-list dd {
+    position: relative;
+    margin: 0;
+}
+
+#rank-list ol {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#rank-list li {
+    height: 20px;
+    line-height: 20px;
+}
+
+
